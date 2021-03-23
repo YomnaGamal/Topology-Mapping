@@ -1,8 +1,6 @@
-﻿Data Mining
+Data Mining
 # Topology Mapping
-**26th November 2020**
 
-#
 # **Problem Statement**
 Simulating large-scale network experiments requires powerful physical resources. However, partitioning could be used to reduce the required power of the resources and to reduce the simulation time. Topology mapping is a partitioning technique that maps the simulated nodes to different physical nodes. In this assignment, we will use spectral clustering to partition a given network topology on the available physical nodes. The network topology is a graph of N nodes communicating with each other by sending data traffic through a set of edges. An edge in the topology is weighted by the traffic (Mbps) passing through it. Our clustering technique should find the cut that minimizes the traffic between different partitions (Emulated traffic in the figure below). 
 
@@ -148,48 +146,7 @@ Note: We try it on K = 2 topology 10 just for testing and this is t\_10\_1 after
 
 ![](img/18.png)
 # **Big Picture** 
-## **Run the clustering with the different values of K**
-***For t\_10***
-
-![](img/19.png)
-
-![](img/20.png)![](img/21.png)
-
-***For t\_50***
-
-![](img/22.png)
-
-![](img/23.png)
-
-![](img/24.png)
-
-![](img/25.png)
-
-![](img/26.png)
-
-![](img/27.png)
-
-![](img/28.png)
-
-![](img/29.png)
-
-***For t\_100***
-
-![](img/30.png)
-
-![](img/31.png)
-
-![](img/32.png)
-
-![](img/33.png)
-
-![](img/34.png)
-
-![](img/35.png)
-
-![](img/36.png)
-
-## **Evaluation for each clustering found**
+## **Run the clustering with the different values of K* and Evaluation for each clustering **
 ***For t\_10***
 
 ***(conditional entropy)***
@@ -226,12 +183,6 @@ Note: We try it on K = 2 topology 10 just for testing and this is t\_10\_1 after
 ## **Best clustering based on evaluation**
 The best evaluation is the conditional entropy measurement evaluation on the average of all clusters as each ground truth is clustered according to the number of clusters in it.
 ##
-##
-##
-##
-##
-##
-##
 ## **Report the amount of traffic running internally in each individual partition, and the total amount of emulated traffic between different partitions (sum of the cut weights between different clusters)**
 ![](img/44.png)
 
@@ -239,15 +190,12 @@ The best evaluation is the conditional entropy measurement evaluation on the ave
 
 ![](img/46.png)
 
-![](img/47.png)
 
 ![](img/48.png)
 
-![](img/49.png)
 
 ![](img/50.png)
 
-![](img/51.png)
 
 
 
